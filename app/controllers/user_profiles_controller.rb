@@ -5,7 +5,7 @@ class UserProfilesController < ApplicationController
   def new
     @user_profile = UserProfile.new
     @category_about_region = CategoryAboutRegion.new
-    @category_incubation = CategoryIncubations.new
+    @category_incubation = CategoryIncubation.new
     @category_immigration_support = CategoryImmigrationSupport.new
     @category_job = CategoryJob.new
     @category_skill = CategorySkill.new

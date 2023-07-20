@@ -75,7 +75,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_05_023637) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "category_immigration_supports", charset: "utf8mb4", force: :cascade do |t|
+  create_table "category_incubations", charset: "utf8mb4", force: :cascade do |t|
     t.string "tag_name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -224,7 +224,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_05_023637) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "profile_category_immigration_supports", charset: "utf8mb4", force: :cascade do |t|
+  create_table "profile_category_incubations", charset: "utf8mb4", force: :cascade do |t|
     t.integer "user_profile_id"
     t.integer "category_immigration_support_id"
     t.datetime "created_at", null: false
@@ -260,7 +260,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_05_023637) do
     t.string "prefecture"
     t.string "city"
     t.text "about_region"
-    t.text "immigration_support"
     t.text "immigration_support"
     t.text "job"
     t.text "skill"
